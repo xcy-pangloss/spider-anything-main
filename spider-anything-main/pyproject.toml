@@ -1,0 +1,25 @@
+[project]
+name = "spider-anything"
+version = "0.1.0"
+description = "Spider for Anything"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiosqlite>=0.21.0",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "openpyxl>=3.1.5",
+    "playwright>=1.52.0",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
+    "python-dotenv>=1.1.1",
+    "tortoise-orm[asyncpg]>=0.25.1",
+]
+
+[tool.uv]
+package = true
+
+[[tool.uv.index]]
+name = "default"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
